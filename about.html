@@ -1,0 +1,44 @@
+<!-- about.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Ofplay</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="dark">
+  <header class="site-header">
+    <div class="brand"><img src="assets/logo.svg" class="logo"><a href="index.html" class="brand-name">Ofplay</a></div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a><a href="about.html" class="active">About</a><a href="product.html">Product</a><a href="developers.html">Developers</a><a href="services.html">Services</a><a href="future.html">Future</a><a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>About Ofplay</h2>
+    <p>Ofplay is a YouTube-powered music streaming experience designed to combine the scale of YouTube with the polish of a modern music app. Our mission is to make discovery effortless and social sharing seamless.</p>
+
+    <section class="cards-row">
+      <div class="card">
+        <h3>Mission</h3>
+        <p>Make quality music discovery accessible — everywhere.</p>
+      </div>
+      <div class="card">
+        <h3>Vision</h3>
+        <p>Be the platform where creators & listeners meet through playlists and tools.</p>
+      </div>
+      <div class="card">
+        <h3>Values</h3>
+        <p>Respect artists, enable creators, delight listeners.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>© <span id="year2"></span> Ofplay</div>
+  </footer>
+
+  <script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
+</body>
+</html>

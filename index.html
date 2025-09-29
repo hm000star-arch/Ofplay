@@ -1,0 +1,71 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ofplay — YouTube-powered Music Streaming</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="assets/logo.svg" />
+</head>
+<body class="dark">
+  <header class="site-header">
+    <div class="brand">
+      <img src="assets/logo.svg" alt="Ofplay logo" class="logo" />
+      <a href="index.html" class="brand-name">Ofplay</a>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="product.html">Product</a>
+      <a href="developers.html">Developers</a>
+      <a href="services.html">Services</a>
+      <a href="future.html">Future</a>
+      <a href="contact.html" class="btn-ghost">Contact</a>
+    </nav>
+    <button class="mobile-toggle" aria-label="Toggle menu">☰</button>
+  </header>
+
+  <main class="hero">
+    <div class="hero-left">
+      <h1>Stream the world’s music — powered by YouTube.</h1>
+      <p class="tagline">Discover, queue & share handpicked tracks. Playlists, socials & smart suggestions — all in one place.</p>
+      <div class="cta-row">
+        <a href="product.html" class="btn-primary">Discover Product</a>
+        <a href="developers.html" class="btn-outline">For Developers</a>
+      </div>
+
+      <div class="features">
+        <div><strong>Curated Playlists</strong><span>Daily mixes & mood playlists</span></div>
+        <div><strong>Seamless YouTube Integration</strong><span>Embed & play YouTube tracks</span></div>
+        <div><strong>Cross-device</strong><span>Mobile, desktop, Chromecast</span></div>
+      </div>
+    </div>
+
+    <aside class="hero-right">
+      <div class="player-card">
+        <div class="now">Now Playing</div>
+        <!-- Example YouTube embed (replace video id as needed) -->
+        <div class="yt-wrap">
+          <iframe id="ytplayer" src="https://www.youtube.com/embed/3JZ4pnNtyxQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <div class="player-controls">
+          <button id="prev">⏮</button>
+          <button id="play">▶</button>
+          <button id="next">⏭</button>
+        </div>
+      </div>
+      <div class="small-note">Tip: This is a demo YouTube embed. For production, use YouTube APIs and comply with their TOS.</div>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div>© <span id="year"></span> Ofplay — Built for music lovers.</div>
+    <div class="socials">
+      <a href="#">Twitter</a> · <a href="#">Instagram</a> · <a href="#">GitHub</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

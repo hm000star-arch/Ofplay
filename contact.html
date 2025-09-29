@@ -1,0 +1,46 @@
+<!-- contact.html -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Contact — Ofplay</title><link rel="stylesheet" href="css/styles.css"/></head>
+<body class="dark">
+  <header class="site-header">
+    <div class="brand"><img src="assets/logo.svg" class="logo"><a href="index.html" class="brand-name">Ofplay</a></div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="product.html">Product</a><a href="developers.html">Developers</a><a href="services.html">Services</a><a href="future.html">Future</a><a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Contact Us</h2>
+    <p>Questions, partnerships or dev inquiries — drop a message.</p>
+
+    <form id="contact-form" action="#" method="POST" onsubmit="return submitContact(event)">
+      <label>
+        Name
+        <input type="text" name="name" required />
+      </label>
+      <label>
+        Email
+        <input type="email" name="email" required />
+      </label>
+      <label>
+        Message
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+      <button type="submit" class="btn-primary">Send Message</button>
+    </form>
+    <div id="cstatus" class="note"></div>
+  </main>
+
+  <footer class="site-footer"><div>© <span id="y7"></span> Ofplay</div></footer>
+  <script>
+    document.getElementById('y7').textContent = new Date().getFullYear();
+    function submitContact(e){
+      e.preventDefault();
+      document.getElementById('cstatus').textContent = 'Thanks — message received (demo). In production, wire to your server/email service.';
+      e.target.reset();
+      return false;
+    }
+  </script>
+</body>
+</html>

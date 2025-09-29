@@ -1,0 +1,41 @@
+<!-- developers.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Developers — Ofplay</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body class="dark">
+  <header class="site-header">
+    <div class="brand"><img src="assets/logo.svg" class="logo"><a href="index.html" class="brand-name">Ofplay</a></div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="product.html">Product</a><a href="developers.html" class="active">Developers</a><a href="services.html">Services</a><a href="future.html">Future</a><a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Developer Platform</h2>
+    <p>Ofplay offers lightweight APIs and embeddable widgets to bring music features into apps and websites.</p>
+
+    <h3>Example: Simple Search (client-side demo)</h3>
+    <pre><code>// pseudo example: call your backend that queries YouTube Data API
+fetch('/api/search?q=artist+name')
+  .then(r=>r.json())
+  .then(results => console.log(results));
+    </code></pre>
+
+    <h3>Widgets</h3>
+    <ul>
+      <li>Mini Player (iframe-based)</li>
+      <li>Playlist Embed</li>
+      <li>Auth for curators</li>
+    </ul>
+
+    <p class="note">We recommend server-side YouTube Data API calls to protect your API key.</p>
+  </main>
+
+  <footer class="site-footer"><div>© <span id="y4"></span> Ofplay</div></footer>
+  <script>document.getElementById('y4').textContent = new Date().getFullYear();</script>
+</body>
+</html>

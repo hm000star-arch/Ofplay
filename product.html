@@ -1,0 +1,51 @@
+<!-- product.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Product — Ofplay</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body class="dark">
+  <header class="site-header">
+    <div class="brand"><img src="assets/logo.svg" class="logo"><a href="index.html" class="brand-name">Ofplay</a></div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="product.html" class="active">Product</a><a href="developers.html">Developers</a><a href="services.html">Services</a><a href="future.html">Future</a><a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Product Overview</h2>
+    <p>Ofplay blends YouTube’s catalogue with curated UX: playlists, queueing, autoplay, social sharing, and device casting.</p>
+
+    <section class="product-features">
+      <div class="feature">
+        <h4>Smart Playlists</h4>
+        <p>Generate daily mixes from artists and tracks you love.</p>
+      </div>
+      <div class="feature">
+        <h4>Queue & Crossfade</h4>
+        <p>Smooth listening with smart crossfade and queue management.</p>
+      </div>
+      <div class="feature">
+        <h4>Social Sharing</h4>
+        <p>Share playlists and tracks with one click.</p>
+      </div>
+    </section>
+
+    <section>
+      <h3>YouTube Integration (how)</h3>
+      <ol>
+        <li>Embed YouTube player / use YouTube IFrame API for playback control.</li>
+        <li>Use YouTube Data API to search for videos & get metadata.</li>
+        <li>Cache minimal metadata on server for speed and compliance.</li>
+      </ol>
+      <p class="note">Note: For production, follow YouTube's API Terms of Service and CORS/auth requirements.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div>© <span id="y3"></span> Ofplay</div></footer>
+  <script>document.getElementById('y3').textContent = new Date().getFullYear();</script>
+</body>
+</html>
